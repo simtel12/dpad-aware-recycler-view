@@ -238,11 +238,13 @@ public class ExtGridLayoutManager extends GridLayoutManager {
 
     public ExtGridLayoutManager(Context context, int spanCount) {
         super(context, spanCount);
+        setSpanCount(spanCount);
     }
 
     public ExtGridLayoutManager(Context context, int spanCount, int orientation,
             boolean reverseLayout) {
         super(context, spanCount, orientation, reverseLayout);
+        setSpanCount(spanCount);
     }
 
     public void disableOffset() {
